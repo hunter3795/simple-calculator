@@ -1,0 +1,103 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#input {
+  font-size: 30px;
+  width: 230px;
+  background-color: transparent;
+  border: 2px solid green;
+  color: red;
+}
+
+.table {
+  margin-block-start: 10px;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, auto);
+  gap: 10px;
+  justify-items: center;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.button:hover {
+  background-color: aqua;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+button:hover:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button_plus,
+.button_minus,
+.button_multiply,
+.button_divide,
+.button_equally,
+.button_clear {
+  background-color: orange;
+}
+
+.button_divide {
+  grid-row: 1;
+  grid-column: 4/4;
+}
+
+.button_seven,
+.button_eight,
+.button_nine {
+  grid-row: 2;
+}
+
+.button_multiply {
+  grid-row: 2;
+  grid-column: 4/4;
+}
+
+.button_four,
+.button_five,
+.button_six {
+  grid-row: 3;
+}
+
+.button_minus {
+  grid-row: 3;
+  grid-column: 4/4;
+}
+
+.button_one,
+.button_two,
+.button_three,
+.button_plus {
+  grid-row: 4;
+}
+
+.button_point,
+.button_zero,
+.button_clear,
+.button_equally {
+  grid-row: 5;
+}
+
+.button_point {
+  grid-column: 1;
+}
+
+.button_equally {
+  grid-column: 4;
+}
